@@ -24,7 +24,7 @@ Future<void> firebaseMessagingBackGroundHandler(RemoteMessage message) async {
 }
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized(); 
   await Firebase.initializeApp();
   FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackGroundHandler);
   FirebaseMessaging messaging = FirebaseMessaging.instance;
